@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Página principal de Instagram</title>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="row navbar navbar-light bg-light fixed-top">
+                <div
+                    class="col-4 col-sm-4 col-md-6 d-flex align-items-center align-items-baseline mt-1 justify-content-center">
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <a href="index2.html?#" class="text-decoration-none">
+                        <h3 class="fst-italic ml-2 text-decoration-none" style="color: black"> Instagram </h3>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 d-flex justify-content-end text-nowrap">
+                    <button
+                        type="button"
+                        class="btn btn-success"
+                        data-toggle="modal"
+                        data-target="#exampleModal">
+                        Create a new post
+                    </button>
+                </div>
+
+ <!-- DROPDOWN -->
+
+   <div class="col-2 col-sm-2 col-md-2 mr-auto">
+     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog"></i></a>
+
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <a class="dropdown-item" href="#">Action</a>
+             <a class="dropdown-item" href="#">Another action</a>
+             <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+            </div>
+         </header>
+ <!--MODAL-->
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <textarea
+                                class="form-control mr-sm-2"
+                                name="ml-2 mr-2"
+                                id="ml-2 mr-2"
+                                cols="50"
+                                rows="5"
+                            ></textarea>
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <i class="fas fa-camera"></i>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-outline-secondary"
+                                data-dismiss="modal"
+                            >
+                                Cancel
+                            </button>
+                            <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 mb-5"></div>
+        <div class="container d-flex justify-content-center">
+            <ul class="nav nav-pills mt-5" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active btn btn-secondary" id="pills-home-tab" data-toggle="pill" href="index2.html?#"
+                        role="tab" aria-controls="pills-home" aria-selected="true">
+                        <i class="fas fa-th fa-xs"></i></a>
+                    
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link btn btn-secondary" id="pills-profile-tab" data-toggle="pill"
+                        href="index3.html" role="tab" aria-controls="pills-profile" aria-selected="false">
+                        <i class="fas fa-square fa-xs"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--pills Y grid de fotos//CARD-->
+        
+        <div
+            class="tab-pane d-none d-flex justify-content-center my-4" id="pills-profile" role="tabpanel"
+            aria-labelledby="pills-profile-tab">
+            <div class="card" style="width: 70%">
+                <div
+                    class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3">
+                    <h4 class="ml-2 mr-2">Pandas</h4>
+                    <p class="ml-2 mr-2">3/6/23</p>
+                </div>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Giant_Panda_2004-03-2.jpg/1200px-Giant_Panda_2004-03-2.jpg"
+                    class="card-img-top" alt="..."
+                />
+
+                <div class="card-body">
+                    <div class="d-flex">
+                        <h5 class="card-title">Pandas &nbsp;</h5>
+                        <p class="card-text">Los Pandas son hermosos.</p>
+                    </div>
+                    <div class="ml-2 mr-2">
+                        <p><strong>Marta</strong> Que hermoso</p>
+                    </div>
+                    <p class="text-secondary">4 comentarios más</p>
+                    <hr />
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Añade un comentario" aria-label="ml-2 mr-2"
+                            aria-describedby="basic-addon1"/>
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="button">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="tab-pane d-none d-flex justify-content-center my-4"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab">
+            <div class="card" style="width: 70%">
+                <div class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3">
+                    <h4 class="ml-2 mr-2">Aves </h4>
+                    <p class="ml-2 mr-2">3/6/23</p>
+                </div>
+                <img
+                    src="https://d7lju56vlbdri.cloudfront.net/var/ezwebin_site/storage/images/_aliases/img_1col/en-exclusiva/embargos/la-ciencia-ciudadana-revela-como-evolucionaron-los-picos-de-las-aves/5919115-11-esl-MX/La-ciencia-ciudadana-revela-como-evolucionaron-los-picos-de-las-aves.jpg"
+                    alt="..."/>
+
+                <div class="card-body">
+                    <div class="d-flex">
+                        <h5 class="card-title">Aves &nbsp;</h5>
+                        <p class="card-text">Cuidemos las aves</p>
+                    </div>
+                    <div class="ml-2 mr-2">
+                        <p><strong>Geovanni</strong> Que hermosa</p>
+                    </div>
+                    <p class="text-secondary">29 comentarios mas</p>
+                    <hr />
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Añade un comentario" aria-label="ml-2 mr-2"
+                            aria-describedby="basic-addon1"/>
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="button">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="tab-pane d-none d-flex justify-content-center my-4" id="pills-profile" role="tabpanel"
+            aria-labelledby="pills-profile-tab">
+            <div class="card" style="width: 70%">
+                <div class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3">
+                    <h4 class="ml-2 mr-2">Ciencia y más</h4>
+                    <p class="ml-2 mr-2">4/6/23</p>
+                </div>
+                <img
+                    src="https://media.istockphoto.com/id/1213724568/fr/photo/micorscope-est-utilis%C3%A9-par-la-chercheuse-qui-utilise-ses-mains-tenant-et-ajustant.jpg?s=612x612&w=0&k=20&c=oL7x1uUalyb48mrPFiQi_vD_beWxWM8n7DW5mA6Qdlc="
+                    alt="..."/>
+                <div class="card-body">
+                    <div class="d-flex">
+                        <h5 class="card-title">Ciencia y más &nbsp;</h5>
+                        <p class="card-text">Descubriendo.</p>
+                    </div>
+                    <div class="ml-2 mr-2">
+                        <p><strong>Devany</strong> Excelente!</p>
+                    </div>
+                    <p class="text-secondary">98 comentarios más</p>
+                    <hr />
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Añade un comentario"
+                            aria-label="ml-2 mr-2"
+                            aria-describedby="basic-addon1"/>
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="button">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
